@@ -7,7 +7,7 @@ Authors@R: c(
         person("Jonathan", "Sidi", email = "yonicd@gmail.com", role = c("aut","cre"))
         )
 Description: Addins for the tidylog package to run in RStudio IDE.
-Depends: R (>= 4.1.0), dplyr, tidyr
+Depends: R (>= 4.1.0), tidylog
 Imports: 
     rstudioapi
 Suggests:

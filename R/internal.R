@@ -1,16 +1,11 @@
-#' @importFrom rstudioapi getSourceEditorContext modifyRange
+#' @importFrom rstudioapi getActiveDocumentContext modifyRange
 #' @importFrom utils capture.output
-#' @import dplyr
-#' @import tidyr
+#' @import tidylog
 internal <- function(x){
-  if(!isNamespaceLoaded("dplyr")){
-    attachNamespace('dplyr')  
-  }
   if(!isNamespaceLoaded("tidylog")){
     attachNamespace('tidylog')  
   }
-  
-  sc <- rstudioapi::getSourceEditorContext()
+  sc <- rstudioapi::getActiveDocumentContext()
   full_sc <- sc$contents
   nr <- sc$selection[[1]]$range$end[[1]]
   flag <- TRUE
