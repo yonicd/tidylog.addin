@@ -1,0 +1,4 @@
+Name: Inline tidylog
+Description: Add tidylog comments to tidy functions in the editor
+Binding: internal
+Interactive: false
